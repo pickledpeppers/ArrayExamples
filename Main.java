@@ -78,20 +78,19 @@ class Main
          *         ar3: 1 2 3 0 1 2 3
          */
         System.out.println("*** Task 4 PRINTING ar3 *");
-        int[] ar3 = new int[ar1.length*2 + 1];
+        int[] ar3 = new int[ar1.length*2];
         for (int i= 0; i<ar1.length; i++)
         {
             ar3[i]=ar1[i];
             
         }
-        ar3[ar1.length] = 0;
         for (int i= 0; i<ar1.length; i++)
         {
-            ar3[i+ar1.length+1]=ar1[i];
+            ar3[i+ar1.length]=ar1[i];
             
         }
         
-        for (int i= 0; i<ar1.length*2+1; i++)
+        for (int i= 0; i<ar1.length*2; i++)
         System.out.println("ar3[" + i + "] =" + ar3[i]);
         
         /*
