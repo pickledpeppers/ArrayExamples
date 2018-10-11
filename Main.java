@@ -29,7 +29,7 @@ class Main
          * Task 1.  Create an array of integers from 0 to n-1
          *          call this array ar1.  Print it out below.
          */
-        System.out.println("*** PRINTING ar1 *");
+        System.out.println("*** Task 1 PRINTING ar1 *");
         int[] ar1 = new int[n];
         
         for (int i= 0; i<ar1.length; i++)
@@ -46,7 +46,7 @@ class Main
          * Task 2.  Create a new array called ar2.
          *          Copy the elements of ar1 into ar2.
          */
-        System.out.println("*** PRINTING ar2 *");
+        System.out.println("*** Task 2 PRINTING ar2 *");
         
         int[] ar2 = new int[ar1.length];
         //two ways of copying elements of ar1 into ar2.
@@ -61,7 +61,12 @@ class Main
         /* 
          * Task 3. Add 1 to each element in ar1.  Print it out below
          */
-        
+        System.out.println("*** Task 3 PRINTING ar1 *");
+        for (int i= 0; i<ar1.length; i++)
+        {
+            ar1[i]=ar1[i] + 1;
+            System.out.println("ar1[" + i + "] =" + ar1[i]);
+        }
 
         
         
@@ -72,7 +77,22 @@ class Main
          *         ar1: 1 2 3
          *         ar3: 1 2 3 0 1 2 3
          */
+        System.out.println("*** Task 4 PRINTING ar3 *");
+        int[] ar3 = new int[ar1.length*2 + 1];
+        for (int i= 0; i<ar1.length; i++)
+        {
+            ar3[i]=ar1[i];
+            
+        }
+        ar3[ar1.length] = 0;
+        for (int i= 0; i<ar1.length; i++)
+        {
+            ar3[i+ar1.length+1]=ar1[i];
+            
+        }
         
+        for (int i= 0; i<ar1.length*2+1; i++)
+        System.out.println("ar3[" + i + "] =" + ar3[i]);
         
         /*
          * Task 5.  Switch the first and last element of ar1.
