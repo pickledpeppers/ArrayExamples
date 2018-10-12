@@ -97,6 +97,12 @@ class Main
          * Task 5.  Switch the first and last element of ar1.
          *          print out the new ar1.  Then switch them back
          */
+        System.out.println("*** Task 5 PRINTING ar1 *");
+        int store = ar1[ar1.length -1];
+        ar1[ar1.length -1] = ar1[0];
+        ar1[0] = store;
+        for (int i= 0; i<ar1.length; i++)
+        System.out.println("ar1[" + i + "] =" + ar1[i]);
         
         /*
          * Task 6A. Print the 2nd to (n-1)th elements of ar1
@@ -105,6 +111,24 @@ class Main
          *          the indices are multiples of 3
          *         
          */
+        System.out.println("*** Task 6 PRINTING ar1 *");
+        
+        System.out.println("2nd to n-1 elements");
+        for (int i= 1; i<ar1.length-1; i++)
+        System.out.println("ar1[" + i + "] =" + ar1[i]);
+        
+        System.out.println("odd numbers only");
+        for (int i=0; i<ar1.length; i++)
+        {
+            if (ar1[i]% 2 != 0)
+            System.out.println("ar1[" + i + "] =" + ar1[i]);
+        }
+ 
+        System.out.println("print elements when the indices are multiples of 3");
+        for (int i=0; i<ar1.length; i= i+ 3)
+        {
+            System.out.println("ar1[" + i + "] =" + ar1[i]);
+        }
         
         /*
          * Task 7.  For each element in ar1, 
@@ -117,6 +141,14 @@ class Main
          *          ar[2]=30
          *          ar[3]=4
          */
+        System.out.println("*** Task 7 PRINTING ar1 *");
+        
+        for (int i=0; i < ar1.length; i++)
+        {
+            if (ar1[i]% 2 != 0)
+            ar1[i] = ar1[i]*10;
+            System.out.println(ar1[i]);
+        }
         
          /*
           * Task 8
