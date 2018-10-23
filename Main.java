@@ -210,9 +210,19 @@ class Main
          * For example
          * old   ar4: 1 3 5 7 9
          * new   ar4  9 1 3 5 7
-         */
-        
-        
+         */9
+        System.out.println("*** Task 10 PRINTING ar4 *");
+        n = ar4.length-1;
+        int save = ar4[n];
+        for (int i = n; i > 0; i--)
+        {
+            ar4[i] = ar4[i-1];
+        }
+        ar4[0] = save;
+        for (int i=0; i < ar4.length; i++)
+        {
+            System.out.println(ar4[i]);
+        }
         /*
          * Task 11.  Reverse the order of elements in ar2
          */
