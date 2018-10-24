@@ -210,7 +210,7 @@ class Main
          * For example
          * old   ar4: 1 3 5 7 9
          * new   ar4  9 1 3 5 7
-         */9
+         */
         System.out.println("*** Task 10 PRINTING ar4 *");
         n = ar4.length-1;
         int save = ar4[n];
@@ -226,8 +226,23 @@ class Main
         /*
          * Task 11.  Reverse the order of elements in ar2
          */
-        
-        
+        System.out.println("*** Task 11 PRINTING ar2 *");
+        int[] c = new int[ar2.length];
+        k = 0;
+        for (int i=0; i < ar2.length; i++)
+        {
+            System.out.println(ar2[i]);
+        }
+        for (int i = ar2.length-1; i >= 0; i--)
+        {
+            c[i] = ar2[k];
+            k++;
+        }
+        ar2 = c.clone();
+        for (int i=0; i < ar2.length; i++)
+        {
+            System.out.println(ar2[i]);
+        }
         /*
          * Task 12: 
          * Create an array of Strings called ar5.
