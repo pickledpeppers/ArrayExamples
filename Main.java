@@ -243,6 +243,20 @@ class Main
         {
             System.out.println(ar2[i]);
         }
+        
+        System.out.println("*** Task 11 PRINTING ar2 alternate way *");
+        int temp = (int)(ar2.length)/2;
+        for (int i = 0; i< temp; i++)
+        {
+            temp = ar2[i];
+            ar2[i] = ar2[ar2.length - 1 - i];
+            ar2[ar2.length - 1 - i] = temp;
+       
+        }
+        for (int i=0; i < ar2.length; i++)
+        {
+            System.out.println(ar2[i]);
+        }
         /*
          * Task 12: 
          * Create an array of Strings called ar5.
@@ -266,6 +280,18 @@ class Main
          *  
          *  Count how many words have more than 5 letters.
          */
+        System.out.println("*** Task 12 PRINTING ar5*");
+        String[] ar5 = {"Four", "score", "and", "seven", "years", "ago", "our", "fathers", "brought", "forth", "this", "continent", "a", "new", "nation"};
+        int[] ar6 = new int[ar5.length];
+        int i = 0;
+        for (int x : ar6)
+        {
+            ar6[i] = ar5[i].length();
+            System.out.println("ar5(word) is " + ar5[i] + " & ar6(length) is " + ar6[i]);
+            i++;  
+        }
+        
+        
         
         /*
          * Task 13
