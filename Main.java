@@ -354,10 +354,15 @@ class Main
         }
         
         //initializing arindex and filling it in
+        int m = 0;
         int[] arindex = new int[k];
         for (int o = 0; o<arx.length; o++)
         {
-            arindex[k] = arx[o];
+            if (arx[o] % 3 ==0)
+            {
+              arindex[m] = o;
+              m++;
+            }
         }
         
         System.out.println("*** Task 14 PRINTING arindex ***");
@@ -373,6 +378,17 @@ class Main
           * fb[3]=fb[1]+fb[2]
           * fb[4]=fb[2]+fb[3]
           */
+        System.out.println("*** Task 15 PRINTING fb ***");
+        int[] fb = new int[10];
+        fb[0] = 1;
+        fb[1] = 1;
+        for (int o = 2; o < fb.length; o++)
+            fb[o] = fb[o-1] + fb[o-2];
+        for (int o = 0; o < fb.length; o++)
+            System.out.println(fb[o]);
+            
+          
+     
         
     }
 }
