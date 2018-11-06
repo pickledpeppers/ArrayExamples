@@ -8,20 +8,12 @@ public class recursionDriver
         return 2 + countElephant(n-1);
     }
     
-    public static int countOddNum(int n)
+    public static int countNum(int n)
     {
-        //given that n it is odd
-        if (n==1)
-        return 1;
-        return n + countOddNum(n-2);
-    }
-    
-    public static int countEvenNum(int n)
-    {
-        //given that n it is even
-        if (n==0)
+        if (n<=0)
         return 0;
-        return n + countEvenNum(n-2);
+        else
+        return n + countNum(n-2);
     }
     
     public static void main(String[] args)
@@ -42,5 +34,10 @@ public class recursionDriver
          // Task 1.
          counted = countElephant(10);
          System.out.println(counted);
+         // Task 4.
+         System.out.println(countNum(5));
+         // Task 5.
+         
+         
     }
 }
